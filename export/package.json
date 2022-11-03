@@ -1,0 +1,21 @@
+{
+  "name": "perlin-particles",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "rm -rf ./dist; rm -rf ./.parcel-cache; parcel serve index.html --port 8888 --open",
+    "build": "rm -rf ./dist; parcel build index.html --public-url '.' --no-source-maps;parcel serve index.html --port 9999"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.5.0",
+    "three": "^0.140.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-glsl": "^2.5.0",
+    "buffer": "^6.0.3",
+    "process": "^0.11.10"
+  }
+}
